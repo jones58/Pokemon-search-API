@@ -1,8 +1,8 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title></title>
+    <title>Pokémon Search App</title>
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0, minimum-scale=1.0"
@@ -13,10 +13,94 @@
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
-    <header>
+  <body class="bg-dark">
+    <header class="container p-md-5 p-1 text-center text-light">
       <h1>Pokémon Search App</h1>
     </header>
+    <div class="container">
+      <main
+        class="row justify-content-center bg-light text-dark rounded-lg shadow-lg p-4"
+      >
+        <div class="col-12">
+          <div class="input-group justify-content-center">
+            <input
+              id="input-search"
+              placeholder="Pokémon Name or ID"
+              class="form-control col-12"
+            />
+            <button
+              type="button"
+              class="btn btn-primary bg-dark col-4"
+              id="btn-search"
+            >
+              Search
+            </button>
+          </div>
+        </div>
+        <section class="col-12 mt-4">
+          <div class="container row">
+            <h3 class="text-center" id="pokemon-name">Name</h3>
+            <h3 class="text-center" id="pokemon-id">ID</h3>
+          </div>
+          <div class="container row">
+            <h4>Weight:</h4>
+            <h4 id="weight"></h4>
+            <h4>Height:</h4>
+            <h4 id="height"></h4>
+          </div>
+          <div class="col-sm-12 col-md text-center">
+            <!-- Adjusted class -->
+            <div class="justify-content-center">
+              <!-- Adjusted class -->
+              <img
+                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png"
+                alt="Pokemon"
+                class="img-thumbnail mx-auto"
+              />
+              <!-- Adjusted class -->
+            </div>
+          </div>
+        </section>
+        <div class="col-12 mt-4">
+          <div class="table-responsive bg-dark">
+            <table class="table text-light bg-dark">
+              <thead>
+                <tr>
+                  <th>Base</th>
+                  <th>Stats</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>HP:</td>
+                  <td>Item</td>
+                </tr>
+                <tr>
+                  <td>Attack:</td>
+                  <td>Item</td>
+                </tr>
+                <tr>
+                  <td>Defense:</td>
+                  <td>Item</td>
+                </tr>
+                <tr>
+                  <td>Sp. Attack:</td>
+                  <td>Item</td>
+                </tr>
+                <tr>
+                  <td>Sp. Defense:</td>
+                  <td>Item</td>
+                </tr>
+                <tr>
+                  <td>Speed:</td>
+                  <td>Item</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </main>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
