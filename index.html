@@ -21,44 +21,46 @@
         class="row justify-content-center bg-light text-dark rounded-lg shadow-lg p-4"
       >
         <div class="col-12">
-          <div class="input-group justify-content-center">
+          <form
+            class="input-group justify-content-center"
+            id="search-submit"
+          >
             <input
-              id="input-search"
+              id="search-input"
               placeholder="Pokémon Name or ID"
+              required=""
               class="form-control col-12"
             />
             <button
-              type="button"
+              type="submit"
+              id="search-button"
               class="btn btn-primary bg-dark col-4"
-              id="btn-search"
             >
               Search
             </button>
-          </div>
+          </form>
         </div>
         <section class="col-12 mt-4">
           <div class="container row">
-            <h3 class="text-center" id="pokemon-name">Name</h3>
-            <h3 class="text-center" id="pokemon-id">ID</h3>
+            <h3 class="text-center hidden" id="pokemon-name"></h3>
+            <h3 class="text-center hidden" id="pokemon-id"></h3>
           </div>
-          <div class="container row">
+          <div class="container row align-content-around">
             <h4>Weight:</h4>
             <h4 id="weight"></h4>
             <h4>Height:</h4>
             <h4 id="height"></h4>
           </div>
           <div class="col-sm-12 col-md text-center">
-            <div class="justify-content-center">
-              <img
-                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png"
-                alt="Pokemon"
-                class="img-thumbnail mx-auto"
-              />
-            </div>
+            <div
+              class="justify-content-center"
+              id="img-container"
+            ></div>
           </div>
-          <div class="bg-dark text-light col-4 rounded-lg mt-4">
-            <p id="types">Type</p>
-          </div>
+          <div
+            class="bg-dark text-light col-4 rounded-lg mt-4 hidden"
+            id="types"
+          ></div>
         </section>
         <div class="col-12 md:col-8 mt-4">
           <div class="table-responsive bg-dark">
@@ -72,27 +74,27 @@
               <tbody>
                 <tr>
                   <td>HP:</td>
-                  <td>Item</td>
+                  <td id="hp"></td>
                 </tr>
                 <tr>
                   <td>Attack:</td>
-                  <td>Item</td>
+                  <td id="attack"></td>
                 </tr>
                 <tr>
                   <td>Defense:</td>
-                  <td>Item</td>
+                  <td id="defense"></td>
                 </tr>
                 <tr>
                   <td>Sp. Attack:</td>
-                  <td>Item</td>
+                  <td id="special-attack"></td>
                 </tr>
                 <tr>
                   <td>Sp. Defense:</td>
-                  <td>Item</td>
+                  <td id="special-defense"></td>
                 </tr>
                 <tr>
                   <td>Speed:</td>
-                  <td>Item</td>
+                  <td id="speed"></td>
                 </tr>
               </tbody>
             </table>
