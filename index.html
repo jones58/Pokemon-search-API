@@ -11,10 +11,9 @@
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
   </head>
-  <body class="bg-dark">
-    <header class="container p-md-5 p-1 text-center text-light">
+  <body class="bg-dark col-md-6 mx-md-auto">
+    <header class="container p-sm-3 p-md-5 text-center text-light">
       <h1>Pokémon Search App</h1>
     </header>
     <div class="container">
@@ -49,25 +48,25 @@
             <h4 id="height"></h4>
           </div>
           <div class="col-sm-12 col-md text-center">
-            <!-- Adjusted class -->
             <div class="justify-content-center">
-              <!-- Adjusted class -->
               <img
                 src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png"
                 alt="Pokemon"
                 class="img-thumbnail mx-auto"
               />
-              <!-- Adjusted class -->
             </div>
           </div>
+          <div class="bg-dark text-light col-4 rounded-lg mt-4">
+            <p id="types">Type</p>
+          </div>
         </section>
-        <div class="col-12 mt-4">
+        <div class="col-12 md:col-8 mt-4">
           <div class="table-responsive bg-dark">
-            <table class="table text-light bg-dark">
+            <table class="table table-borderless text-light bg-dark">
               <thead>
                 <tr>
-                  <th>Base</th>
-                  <th>Stats</th>
+                  <th class="col-6">Base</th>
+                  <th class="col-4">Stats</th>
                 </tr>
               </thead>
               <tbody>
